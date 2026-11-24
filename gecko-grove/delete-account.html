@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Delete your Gecko Grove account</title>
+  <meta name="description" content="How to delete your Gecko Grove account and everything kept with it: your breeder card, your leaderboard scores and your cloud save." />
+  <meta name="robots" content="index, follow" />
+  <style>
+    /* One page, no outside files: nothing here contacts anyone but the site it's on. Colours are the game's own
+       (cream paper, warm ink, leaf green for "go", terracotta for "careful"). */
+    :root {
+      --ink: #2c2420; --ink2: #6b5a52; --cream: #fff6ee; --paper: #fbeedd; --well: #f3e2cc; --line: rgba(44, 36, 32, 0.16);
+      --leaf: #84c98e; --leaf-l: #b9e5b3; --leaf-s: #5fae74; --leaf-d: #3f7f55; --terra-l: #f8c9b4; --butter-l: #fde9a6;
+      --bg: #f6c7b3;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root { --ink: #fbeedd; --ink2: #d9c6b4; --cream: #2f2824; --paper: #3a312c; --well: #46392f; --line: rgba(255, 246, 238, 0.18);
+        --terra-l: #6b3a2a; --butter-l: #5a4a1e; --bg: #1f1a17; }
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body { margin: 0; background: var(--bg); color: var(--ink); font: 500 17px/1.55 ui-rounded, 'Nunito', 'Segoe UI', system-ui, -apple-system, sans-serif; }
+    main { max-width: 680px; margin: 0 auto; padding: 24px 16px 56px; }
+    header { padding: 16px 4px 8px; }
+    .kicker { font-size: 13px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink2); }
+    h1 { font-size: 32px; line-height: 1.15; margin: 4px 0 8px; }
+    h2 { font-size: 22px; line-height: 1.2; margin: 0 0 10px; }
+    p { margin: 0 0 12px; }
+    section { background: var(--cream); border-radius: 24px; padding: 20px; margin: 16px 0; box-shadow: 0 0 0 1.5px var(--line); }
+    ol, ul { margin: 0 0 12px; padding-left: 22px; display: grid; gap: 6px; }
+    .steps { list-style: none; padding: 0; counter-reset: s; gap: 10px; }
+    .steps li { counter-increment: s; display: grid; grid-template-columns: 36px 1fr; gap: 12px; align-items: center; background: var(--paper); border-radius: 16px; padding: 10px 14px; }
+    .steps li::before { content: counter(s); width: 36px; height: 36px; border-radius: 50%; display: grid; place-items: center; background: var(--leaf); color: #2c2420; font-weight: 700; box-shadow: inset 0 2px 0 var(--leaf-l), 0 0 0 1.5px var(--leaf-d); }
+    b, strong { font-weight: 700; }
+    .two { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    @media (max-width: 560px) { .two { grid-template-columns: 1fr; } h1 { font-size: 27px; } }
+    .box { border-radius: 16px; padding: 14px 16px; }
+    .box h3 { margin: 0 0 6px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; }
+    .gone { background: var(--terra-l); }
+    .stays { background: var(--butter-l); }
+    .box ul { margin: 0; }
+    a { color: inherit; text-underline-offset: 3px; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0 22px 2px; border-radius: 16px; text-decoration: none; font-weight: 700; color: #2c2420;
+      background: var(--leaf); box-shadow: inset 0 2px 0 var(--leaf-l), inset 0 -3px 0 var(--leaf-s), 0 0 0 1.5px var(--leaf-d); }
+    .btn:active { transform: translateY(2px); }
+    .mail { font-weight: 700; user-select: all; word-break: break-all; }
+    .small { font-size: 15px; color: var(--ink2); }
+    pre { background: var(--well); border-radius: 12px; padding: 12px 14px; margin: 0 0 12px; white-space: pre-wrap; font: 500 15px/1.5 ui-monospace, Consolas, monospace; }
+    a:focus-visible, .btn:focus-visible { outline: 3px solid var(--leaf-s); outline-offset: 3px; border-radius: 8px; }
+    footer { padding: 8px 4px; }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="kicker">Gecko Grove · by Glittersquid</div>
+    <h1>Delete your account</h1>
+    <p>This page is about the Android game <strong>Gecko Grove: Gecko Breeding</strong> on Google Play (app ID <code>geckogrove.game</code>), made by <strong>Glittersquid</strong>. If you signed in with Google in the game, you have an account, and you can delete it and everything kept with it at any time.</p>
+  </header>
+
+  <section aria-labelledby="in-app">
+    <h2 id="in-app">The quick way: in the game</h2>
+    <ol class="steps">
+      <li>Open Gecko Grove and tap <b>Settings</b> (the gear).</li>
+      <li>Scroll to <b>Online</b> and tap <b>Delete account</b>, at the bottom.</li>
+      <li>Tap the red <b>Delete account</b> button. If Google asks, choose your Google account once more.</li>
+    </ol>
+    <p>It's done in a few seconds, while you watch. If your connection drops half-way, the game finishes the job the next time you open it.</p>
+  </section>
+
+  <section aria-labelledby="by-mail">
+    <h2 id="by-mail">Don't have the game any more? Ask by email</h2>
+    <p>Write to <span class="mail">hybrid4@gmail.com</span> <strong>from the email address of the Google account you signed in with</strong>, so we know the account is yours. You can copy this:</p>
+    <pre>Subject: Delete my Gecko Grove account
+
+Please delete my Gecko Grove account and all the data kept with it.
+I am writing from the email address of the Google account I signed in with.</pre>
+    <p><a class="btn" href="mailto:hybrid4@gmail.com?subject=Delete%20my%20Gecko%20Grove%20account&amp;body=Please%20delete%20my%20Gecko%20Grove%20account%20and%20all%20the%20data%20kept%20with%20it.%0AI%20am%20writing%20from%20the%20email%20address%20of%20the%20Google%20account%20I%20signed%20in%20with.">Write the email</a></p>
+    <p class="small">We delete it by hand and reply when it's done: usually within a few days, and always within 30 days. We don't need to know why, and we won't ask you for anything else.</p>
+  </section>
+
+  <section aria-labelledby="what">
+    <h2 id="what">What is deleted, and what isn't</h2>
+    <div class="two">
+      <div class="box gone">
+        <h3>Deleted</h3>
+        <ul>
+          <li>Your <b>breeder card</b>: your breeder name, your picture and showcase geckos, your studs, your numbers and badges.</li>
+          <li>Your <b>leaderboard scores</b>, on every board, and your Sunday Show entry.</li>
+          <li>Your <b>friends list</b>, your list of blocked players, any parcels waiting for you, your guest book, and the picture of your tank if you shared one.</li>
+          <li>Any <b>trade that is still open</b>. It is closed first, so no gecko has moved and your friend isn't left waiting.</li>
+          <li>Your <b>cloud save</b>: the copy of your grove kept in your account, and any earlier copy kept beside it.</li>
+          <li>Your <b>sign-in</b>: the record of your Google account's email address, name and ID that let you sign in.</li>
+        </ul>
+      </div>
+      <div class="box stays">
+        <h3>Not deleted</h3>
+        <ul>
+          <li><b>The grove on your phone.</b> It lives on your device, not with us. To remove it too, use Settings › Reset game, or uninstall the game.</li>
+          <li><b>Reports you made</b> about other players' cards. They hold no name or email, only an ID that no longer belongs to anyone, and they are kept so that hidden cards stay hidden.</li>
+          <li><b>Small things you already sent</b> to other players that their game hasn't put away yet: a parcel's sticker, a heart, a line in a guest book. They hold no name, and each is cleared by the other player's game. Your friends simply stop seeing you in their list.</li>
+          <li><b>Geckos you traded away.</b> They live in your friend's grove, on your friend's phone: they are theirs now. A finished trade that your friend's game hasn't collected yet stays until it has (it holds the gecko they are owed, and its name), and is then cleared.</li>
+          <li>Your Google account itself, and anything you bought through Google Play. Those belong to your Google account.</li>
+        </ul>
+      </div>
+    </div>
+    <p class="small" style="margin-top:12px">Deleted data leaves our database at once. Google, which runs the database for us, removes it from its backup systems within 180 days.</p>
+  </section>
+
+  <section aria-labelledby="part">
+    <h2 id="part">Only want to leave the leaderboards?</h2>
+    <p>You don't have to delete your account for that. In the game, open <b>Settings › Online › Breeder card</b> and switch <b>Show my card</b> off. Your card and every score are deleted straight away, and your cloud save stays.</p>
+  </section>
+
+  <section aria-labelledby="unused">
+    <h2 id="unused">If you just stop playing</h2>
+    <p>You don't have to do anything. If an account isn't used for two years, we delete the account and everything kept with it, exactly as if you had asked: your breeder card and scores, your friends list, anything waiting for you from other players, the picture of your tank, your cloud save and your sign-in. The grove on your phone isn't touched, and if you come back you can sign in and back it up again.</p>
+  </section>
+
+  <section aria-labelledby="kids">
+    <h2 id="kids">Children</h2>
+    <p>Gecko Grove doesn't offer accounts to children, and collects nothing from them. If you're a parent or guardian and believe your child has an account anyway, write to the address above and we'll delete it.</p>
+  </section>
+
+  <footer class="small">
+    <p>More about what the game keeps and why: the <a href="https://claude.ai/artifact/6rYQHQVuFdD7KAwKKEoNkK">Gecko Grove privacy policy</a>, also linked from the game's page on Google Play and from Settings in the game.</p>
+    <p>Gecko Grove · Glittersquid · hybrid4@gmail.com</p>
+  </footer>
+</main>
+</body>
+</html>
